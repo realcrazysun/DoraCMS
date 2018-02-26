@@ -3,7 +3,7 @@ const { settings } = require('../utils');
 
 //日志根目录
 
-let isDevEnv = (process.env.NODE_ENV == 'development' || process.env.NODE_ENV == 'FAT') ? true : false;
+let isDevEnv = (process.env.NODE_ENV == 'development' || process.env.NODE_ENV == 'FAT') ? true : true;
 let baseLogPath = isDevEnv ? path.resolve(__dirname, '../logs') : settings.SYSTEMLOGPATH;
 //错误日志目录
 let errorPath = "/error";
