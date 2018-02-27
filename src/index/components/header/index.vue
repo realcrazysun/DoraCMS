@@ -67,7 +67,6 @@
                               </el-dropdown-menu>
                             </el-dropdown>
                             </li>
-                            <li :class="{active : $route.fullPath == '/cmscase___SkCL09aCb'}"><router-link :to="{path: '/cmscase___SkCL09aCb'}">应用案例</router-link></li>
                           </ul>
                         </nav>
                     </el-col>
@@ -76,9 +75,9 @@
                             <el-col :xs="0" :sm="14" :md="14" :lg="12" hidden-xs-only>
                                 <SearchBox />
                             </el-col>
-                            <el-col :xs="24" :sm="10" :md="10" :lg="12">
+                            <!-- <el-col :xs="24" :sm="10" :md="10" :lg="12">
                                 <LoginPannel ref="loginPannel"/>
-                            </el-col>
+                            </el-col> -->
                         </el-row>
                     </el-col>
                 </el-row>
