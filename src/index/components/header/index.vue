@@ -8,28 +8,7 @@
                 <el-row :gutter="15" class="grid-content bg-purple-light">
                     <el-col :xs="24" :sm="4" :md="4" :lg="4">
                       <el-row>
-                        <el-col :xs="7" :sm="0" :md="0" :lg="0" :xl="0">
-                          <el-dropdown trigger="click">
-                          <el-button class="toggle-menu" size="mini" plain><i class="fa fa-align-justify"></i></el-button>
-                          <el-dropdown-menu class="drop-menu" slot="dropdown">
-                            <el-dropdown-item v-for="(nav,index) in headerNav" :key="index" v-once>
-                                <router-link :to="{path: '/'+nav.defaultUrl+ '___'+nav._id}">{{nav.name}}</router-link>
-                            </el-dropdown-item>
-                            <el-dropdown-item divided v-if="loginState.logined && loginState.userInfo">
-                              <div>{{loginState.userInfo.userName}}
-                                &nbsp;<el-button type="text" @click="logOut">退出</el-button>
-                              </div>
-                            </el-dropdown-item>
-                            <el-dropdown-item divided v-else>
-                              <div>
-                                <el-button type="text" @click="login">登录</el-button>
-                                <el-button type="text" @click="regUser">注册</el-button>
-                              </div>
-                            </el-dropdown-item>
-                          </el-dropdown-menu>
-                          </el-dropdown>
-                        </el-col>
-                        <el-col :xs="10" :sm="24" :md="24" :lg="24" :xl="24">
+                        <el-col :offset="2" :xs="10" :sm="24" :md="24" :lg="24" :xl="24">
                           <div class="header-logo">
                               <router-link :to="{path: '/'}">
                                   <img src="../../assets/logo.png" />
