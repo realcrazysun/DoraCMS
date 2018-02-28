@@ -8,7 +8,7 @@
                 <el-row :gutter="15" class="grid-content bg-purple-light">
                     <el-col :xs="24" :sm="4" :md="4" :lg="4">
                       <el-row>
-                        <el-col :offset="2" :xs="10" :sm="24" :md="24" :lg="24" :xl="24">
+                        <el-col :xs="10" :sm="24" :md="24" :lg="24" :xl="24">
                           <div class="header-logo">
                               <router-link :to="{path: '/'}">
                                   <img src="../../assets/logo.png" />
@@ -30,7 +30,7 @@
                         </el-col>
                       </el-row>                   
                     </el-col>
-                    <el-col :xs="0" :sm="11" :md="11" :lg="11">
+                    <el-col :xs="2" :sm="11" :md="11" :lg="11">
                         <nav class="header-nav">
                           <ul>
                             <li :class="{active : $route.fullPath == '/'}"><router-link :to="{path: '/'}">首页</router-link></li>
