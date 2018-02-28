@@ -23,12 +23,12 @@
                   </h2>
                   <div class="dis">{{item.discription | cutWords(90)}}</div>
                   <ul class="post-meta">
-                      <li class="author">
+                      <!-- <li class="author">
                         <a class="logo">
                             <img :src="renderAuthor.logo" :alt="renderAuthor.userName">
                         </a>
                         <span>{{renderAuthor.userName}}</span>
-                      </li>
+                      </li> -->
                       <li>
                           <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;{{item.date}}</li>
                       <li>

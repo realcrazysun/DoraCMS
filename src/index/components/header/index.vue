@@ -37,7 +37,7 @@
                             <li>
                               <el-dropdown size="medium">
                               <span class="el-dropdown-link">
-                                文章分类<i class="el-icon-arrow-down el-icon--right"></i>
+                                鲸之类<i class="el-icon-arrow-down el-icon--right"></i>
                               </span>
                               <el-dropdown-menu slot="dropdown">
                                 <el-dropdown-item v-for="(nav,index) in headerNav" :key="index" v-once>
@@ -107,7 +107,7 @@ export default {
       let navs = fullNav.data;
       if (navs && navs.length > 0) {
         return _.filter(navs, doc => {
-          return doc.parentId === "0";
+          return doc.parentId == "Nycd05pP";;
         });
       } else {
         return [];

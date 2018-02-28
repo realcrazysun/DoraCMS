@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       searchkey: "",
-      activeSearch: false
+      activeSearch: true
     };
   },
   methods: {

@@ -10,8 +10,8 @@ const { User, UserNotify } = require('../../server/lib/controller');
 exports.auth = function (req, res, next) {
 
     if (req.session.user) {
-        let unReadMessageCount = UserNotify.getNoReadNotifyCountByUserId(req.session.user._id, 'user');
-        req.session.user.msg_count = unReadMessageCount;
+        // let unReadMessageCount = UserNotify.getNoReadNotifyCountByUserId(req.session.user._id, 'user');
+        // req.session.user.msg_count = unReadMessageCount;
         req.session.logined = true;
         return next();
     } else {
